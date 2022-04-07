@@ -1,5 +1,7 @@
 # How-to-install-tensorflow-gpu
 I struggled quite a bit when installing TensorFlow for training on GPU and I found that there are a lot of people who are finding it a little bit difficult like me. Therefore, I want to help you go step by step on installing TensorFlow for training on GPU.
+
+## Installation
 - If you want to check your [GPU spec information](https://developer.nvidia.com/cuda-gpus)
 - Fristly, we need to download and install [Microsoft Studio community](https://visualstudio.microsoft.com/downloads/)
 - Uninstall all the NVIDIA in "Apps & Features" and remove "NVIDIA Corporation" and "NVIDIA GPU Computing Toolkit" folder in C:\ProgramFile and C:\ProgramFilex84 if this exist. Don't worry we will install all of it later. This is for compatibility.
@@ -19,3 +21,6 @@ I struggled quite a bit when installing TensorFlow for training on GPU and I fou
   >>> import tensorflow as tf
   >>> print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
   ```
+
+## Reference
+- If you want a detail installation. Check this [official documentation guide](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
