@@ -16,7 +16,6 @@ I struggled quite a bit when installing TensorFlow for training on GPU and I fou
 - Install tensorflow-gpu: ```pip install --ignore-installed --upgrade tensorflow-gpu```
 - To know tensorflow is using gpu, open your envs shell and run this:
   ``` python
-  python
   >>> import tensorflow as tf
   >>> print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
   ```
